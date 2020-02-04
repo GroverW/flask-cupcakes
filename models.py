@@ -14,6 +14,7 @@ class Cupcake(db.Model):
     size = db.Column(db.String(24), nullable=False)
     rating = db.Column(db.Float, nullable=False)
     image = db.Column(db.Text, nullable=False, default="https://tinyurl.com/demo-cupcake")
+    #server_default
 
     @classmethod
     def serialize(self, cupcake):
